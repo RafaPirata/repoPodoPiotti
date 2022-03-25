@@ -1063,3 +1063,52 @@ img.logo {
     }
 
 }
+
+/* .AniTituAsi:hover {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+
+
+} */
+
+.AnimaTituAsi:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transform-origin: bottom;
+    cursor: pointer;
+
+}
+
+.AnimaRed:hover {
+    transform: translate(10px);
+}
+
+@keyframes AnimaTitulo {
+
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+        color: red;
+    }
+
+    100% {
+        width: 100%;
+        color: grey;
+    }
+
+
+
+
+}
+
+.AnimaTituBlog {
+    animation-name: AnimaTitulo;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
