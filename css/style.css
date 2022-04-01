@@ -30,23 +30,10 @@
     font-size: 3rem;
 }
 
-.textoNav {
-    font-size: 5vw;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.te-Nav ul li a:hover {
-    background-color: white;
-    border-radius: 50%;
-
-}
-
-
-
 
 /* ...............Inicio Gird.................. */
+
 .ContenedorInicio {
-    /* width: 100vw; */
     height: auto;
     display: grid;
     grid-template-columns: 5vw 25vw 35vw 30vw;
@@ -58,32 +45,19 @@
 
 }
 
-/* #NavIni {
-    grid-area: NavIni;
-    width: auto;
-    height: 10vh;
-    
-} */
 
 #MainIni {
-    /* background-color: grey; */
     grid-area: MainIni;
-    /* margin: 0; */
-    /* width: 100vw; */
-    /* height: auto;  */
-
+  
 }
 
 #AsideIni1 {
-    /* background-color: aqua; */
-    /* background-image: url(../img/art1.png); */
     grid-area: AsideIni1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    /* grid-column: span 6; */
 }
 
 #AsideRed {
@@ -92,7 +66,7 @@
 }
 
 .FondoIni {
-    background-color: rgb(172, 171, 171);
+    
 }
 
 
@@ -100,35 +74,13 @@
 /* ---------------Fin caja Gird---------------- */
 
 /* -------------Inicio Nav--------------------- */
-
-/* 
-.FlexNav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    float: right;
-  
+.navbar-light {
+    background-color: rgba(238, 188, 247, .6);
 
 }
-
-.FlexNav ul li {
-    font-size: 3vw;
-    font-weight: bold;
-
-}
-
-.FlexNav ul li a {
-    color: white;
-    display: block;
-    margin: 10px;
-    padding: 5px;
-
-}
-
-.FlexNav ul li a:hover {
-    background-color: black;
-    border-radius: 50%;
-
+.textoNav {
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 img.logo {
@@ -142,24 +94,37 @@ img.logo {
     width: 15vw;
     height: 10vh;
 
-} */
+} 
+.Titunav {
+    color: white;
+}
+.te-Nav ul li a:hover {
+    background-color: white;
+    border-radius: 50%;
+
+
+}
+img.logo {
+    border-radius: 35%;
+}
 
 
 /* ---------------Fin Nav----------------------- */
 
 /*-------------------inicion Aside Derecho----- */
+
 #AsideIni1 .TituloAside1 {
     display: flex;
     width: 8vw;
-    /* text-align: center; */
     justify-content: center;
 }
 
 .TituloAside1 h2 {
     font-size: 4rem;
     font-weight: 600;
-    margin: 30px;
-    color: white;
+    margin-top: 50px;
+    color: deeppink;
+    text-shadow: black 3px 1px 3px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -169,10 +134,7 @@ img.logo {
     font-family: 'Gill Sans',
         'Gill Sans MT', Calibri,
         'Trebuchet MS', sans-serif;
-    color: black;
-    /* text-decoration: none; */
-
-    /* padding: 5px; */
+    color: dimgrey;
 }
 
 .NotaIni li a:hover {
@@ -197,18 +159,19 @@ img.logo {
         Times,
         serif;
     font-size: 5rem;
-    color: #ded887;
+    color: deeppink;
     text-shadow: white 2px 2px 4px;
 }
 
 
 
 
-.VideoI {
+.PortadaIni {
     display: flex;
+
 }
 
-#MainIni .VideoI {
+#MainIni .PortadaIni {
     width: 100%;
     margin: 10px;
     z-index: 9;
@@ -266,15 +229,10 @@ img.logo {
 /* --------------Inicio Footer--------- */
 
 #FooterIni {
-    /* background-color: blue; */
     grid-area: FooterIni;
     margin-top: 50px;
-    /* background-color: #ded887; */
-    /* background-color: #cc8dcc; */
-    /* background-color: #dd74f0f3; */
-    /* background-color: #5693d0; */
-    /* background-color: #a3c7df; */
-    background-color: rgb(172, 171, 171)
+    width: 100vw;
+    background-color: rgba(238, 188, 247, .6);
 }
 
 .PieI {
@@ -288,7 +246,7 @@ img.logo {
 
 .PieI div {
     text-align: center;
-    color: white;
+    color: rgb(7, 7, 7);
 
 
 }
@@ -298,6 +256,7 @@ img.logo {
     display: flex;
     width: 15vw;
     height: 8vh;
+    margin: 20px;
 
 }
 
@@ -306,177 +265,46 @@ img.logo {
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
         'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 4.5rem;
-    color: white;
-    /* color: rgba(0, 49, 139, 0.787); */
+    color: rgb(7, 7, 7);
+    
 }
 
 /* ------------Fin footer--------------- */
 
+
 /* ..........Inicio Blog............ */
-
-.ConteBlog {
-    width: 98%;
-    gap: 1.6em;
-    display: grid;
-    grid-template-columns: 5vw 25vw 30vw 30vw;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "TitB TitB TitB TitB"
-        "AsideRed Art1 Art1 Art1"
-        "AsideRed Art2 Art2 Art2"
-        "AsideRed Art3 Art3 Art3"
-        "AsideRed Art4 Art4 Art4"
-        "AsideRed Art5 Art5 Art5"
-        "FooterIni FooterIni FooterIni FooterIni";
-
-}
-
-#TitB {
-    grid-area: TitB;
-    text-align: center;
-
-
-
-}
-
-#Art1 {
-    grid-area: Art1;
-    margin: 2.6em;
-
-    display: block;
-
-}
-
-#Art2 {
-    grid-area: Art2;
-    margin: 2.6em;
-
-    display: block;
-}
-
-#Art3 {
-    grid-area: Art3;
-    margin: 2.6em;
-
-    display: block;
-}
-
-#Art4 {
-    grid-area: Art4;
-    margin: 2.6em;
-
-    display: block;
-}
-
-#Art5 {
-    grid-area: Art5;
-    margin: 2.6em;
-
-    display: block;
-
-}
-
-#BlogTitulo h2 {
-    font-size: 7rem;
-    color: white;
-    text-shadow: rgb(0, 183, 255) 3px 2px 4px;
-}
-
-.conteArt1,
-.conteArt2,
-.conteArt3,
-.conteArt4,
-.conteArt5 {
-    font-size: 3rem;
-    text-align: center;
-    padding: 0px 20px 0px 20px;
-    font-family: Roboto,
-        sans-serif;
-    margin: 2px 0;
-
-}
-
-.conteArt1 img {
-    width: 50vw;
-}
-
-
-.conteArt1 p strong {
-    font-size: 3rem;
+.card-title {
+    font-size: 2rem;
     color: red;
 }
 
-
-.conteArt1 div ul li {
-    font-size: 2rem;
-    text-align: start;
-    margin-left: 40px;
-
+.card-text {
+    font-size: 1.5rem;
+    color: black;
 }
 
-.conteArt2 p strong {
-    font-size: 3rem;
-    color: red;
+.card-text1 {
+    font-size: 4rem;
+    color: black;
 }
 
-.conteArt2 div ul li {
-    font-size: 2rem;
-    text-align: start;
-    margin-left: 40px;
-
+.card-text1 p {
+    font-size: 1rem;
 }
 
-.conteArt2 img {
-    width: 50vw;
+.TituBlog {
+    font-size: 8rem;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
+    padding: 20px;
+    margin: 20px;
 }
 
-.conteArt3 p strong {
-    font-size: 3rem;
-    color: red;
+.card-body {
+    background-color: rgba(238, 188, 247, .6);
 }
 
-.conteArt3 div ul li {
-    font-size: 2rem;
-    text-align: start;
-    margin-left: 40px;
 
-}
-
-.conteArt3 img {
-    width: 50vw;
-}
-
-.conteArt4 p strong {
-    font-size: 3rem;
-    color: red;
-}
-
-.conteArt4 div ul li {
-    font-size: 2rem;
-    text-align: start;
-    margin-left: 40px;
-
-}
-
-.conteArt4 img {
-    width: 50vw;
-}
-
-.conteArt5 p strong {
-    font-size: 3rem;
-    color: red;
-}
-
-.conteArt5 div ul li {
-    font-size: 2rem;
-    text-align: start;
-    margin-left: 40px;
-
-}
-
-.conteArt5 img {
-    width: 50vw;
-}
 
 /* ------------fin Blog------------ */
 
@@ -485,50 +313,14 @@ img.logo {
 
 /* -----------Inicio Galeria---------- */
 
-#ContGal {
-    display: grid;
-    width: 98vw;
-    height: auto;
-    grid-template-columns: 5vw 30vw 30vw 30vw;
-    grid-row: auto;
-    grid-template-areas:
-        "TituGal TituGal TituGal TituGal"
-        "AsideRed CarGal CarGal CarGal"
-        "Footer Footer Footer Footer";
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+
+    
 }
 
-#ContGal {
-    grid-area: ContGal;
-    display: flex;
-}
-
-#CarGal {
-    grid-area: CarGal;
-}
-
-/* .ContImg {
-    margin: 0vw;
-    width: 70vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.ContImg figure {
-    text-align: center;
-    width: 30%;
-}
-
-#ContGal .ContImg figure img {
-    border-radius: 15%;
-    width: 15vw;
-    height: 20vh;
-    padding: 5px;
-    background-color: white;
-
-} */
 
 
 .slide {
@@ -539,36 +331,25 @@ img.logo {
 
 
 #TituGal h3 {
-    grid-area: TituGal;
+    
+    grid-area: TraTitu;
     display: flex;
-    font-size: 3rem;
-    color: white;
-    /* width: 100vw;
-    height: 10vh; */
+    font-size: 4rem;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
     justify-content: center;
-    margin: 15px;
+    
 
 }
+
 
 /* ------------Inicio-----Podotratamientos------- */
 
 
-.FondoTra {
-    /* background-color: rgb(224, 219, 219); */
-    /* background-image: url(../img/bubble-png-hd-images-11555939343yia44xmt8b.png); */
-    background-color: rgb(172, 171, 171)
-}
-
-.ContenedorTra {
-    display: grid;
-    width: 98vw;
-    grid-template-columns: 5vw 30vw 30vw 30vw;
-    grid-row: auto;
-    grid-template-areas:
-        "TraTitu TraTitu TraTitu TraTitu"
-        "AsideRed PodTra PodTra PodTra"
-        "FooterIni FooterIni FooterIni FooterIni";
-
+.btn-color {
+    background: linear-gradient(90deg, grey, white);
+    font-size: 2rem;
+    color: white;
 }
 
 
@@ -577,7 +358,8 @@ img.logo {
     grid-area: TraTitu;
     display: flex;
     font-size: 7rem;
-    color: white;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
     width: 100vw;
     height: 10vh;
     justify-content: center;
@@ -585,47 +367,6 @@ img.logo {
 
 }
 
-#PodTra {
-    grid-area: PodTra;
-    display: flex;
-    margin-left: 35vw;
-    width: 35vw;
-
-
-
-
-}
-
-/* .PodoTra {
-    display: flex;
-    margin: 4vw;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-
-
-}
-
-.PodoTra figure {
-    text-align: center;
-    width: 30vw;
-    margin: 10px;
-}
-
-.PodoTra figure img {
-    border-radius: 15%;
-    width: 20vw;
-
-}
-
-.PodoTra figure figcaption {
-    font-size: 3rem;
-    color: rebeccapurple;
-    margin: 20px;
-    padding: 10px; */
-
-}
 
 /* -----------Fin Podotratamiento---------- */
 
@@ -650,129 +391,37 @@ img.logo {
     background: none;
 
 }
-
-.Mapa iframe {
-    width: 30vw;
-    height: auto;
-
-
-}
-
-.container-fluid h1 {
-    color: white;
-}
-
-.logo__Pie {
-    width: 100px;
-    height: auto;
-    border-radius: 15%;
-}
-
-.RedesA,
-.RedesB,
-.RedesC p {
+.TituCont {
+    grid-area: TraTitu;
+    display: flex;
     font-size: 4rem;
-    color: white;
-
-}
-
-
-
-/* .ContCont {
-    display: grid;
-    width: 98vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row: auto;
-    grid-template-areas:
-        "ForC MapaCont MapaCont"
-        "ForC Redes Redes"
-        "FooterC FooterC FooterC";
-
-}
-
-#ForC {
-    grid-area: ForC;
-    display: flex;
-    margin: 20px;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
     justify-content: center;
-    text-align: center;
-} */
-
-/* .textForm {
-    font-size: 2.8rem;
-    background-color: ghostwhite;
-    width: 30vh;
-}
-
-.TituloCont {
-    font-size: 3rem;
-    font-family: fantasy;
-}
-
-#MapaCont {
-    grid-area: MapaCont;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 50vw;
-    height: auto;
-}
-
-#MapaCont iframe {
-    width: 30vw;
-    height: 50vh;
+    
 
 }
-
-#Redes {
-    grid-area: Redes;
-    display: flex;
-    justify-content: center;
+.form-control {
+    font-size: 2rem;
+    background-color: rgb(196, 192, 192);
+}
+.form-select{
+    background-color: rgb(184, 244, 184);
+    font-size: 2rem;
 }
 
-.LogoRedes {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 10px;
-}
 
-#FooterC {
-    grid-area: FooterC;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    background-color: gray;
-}
 
-#FooterC .DirCont {
-    font-size: 3rem;
-    color: white;
-}
-
-.LogoRedes div img {
-    display: flex;
-    width: 5vw;
-    height: 8vh;
-    padding: 15px;
-    background: none;
-
-}
 
 .logo__Pie {
     width: 100px;
-    height: 80px;
+    height: auto;
     border-radius: 15%;
+    border: black 3px solid;
 }
-
-.TituloMapa {
-    font-size: 6rem;
-    color: red;
-    margin: 20px;
-    display: flex;
-} */
 
 /* --------Fin Contacto------------------- */
+
 /* --------------Inicio Nosotros------------ */
 
 .ContenedorNosotros {
@@ -804,6 +453,9 @@ img.logo {
     height: 10vh;
     justify-content: center;
     margin: 15px;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
+    
 
 }
 
@@ -816,7 +468,7 @@ img.logo {
 
 .Contenedor__kro p {
     display: flex;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: rebeccapurple;
     width: 80vw;
     margin: 10px;
@@ -832,6 +484,7 @@ img.logo {
 }
 
 /*---------------- media Q movil------------ */
+
 @media only screen and (min-Width:300px) and (max-width:599px) {
     .ContenedorInicio {
         display: grid;
@@ -844,7 +497,7 @@ img.logo {
     }
 
     #MainIni .VideoI {
-        width: 70vw;
+        width: 90vw;
         margin-top: -100px;
 
 
@@ -853,7 +506,7 @@ img.logo {
     #MainIni .TituloI {
         font-size: 2.5rem;
         width: 70vw;
-        top: 50px;
+        top: 10px;
         position: relative;
     }
 
@@ -886,16 +539,19 @@ img.logo {
         padding: 5px;
     }
 
-    #BlogTitulo h2 {
-        font-size: 3rem;
+    .TituBlog {
+        font-size: 4rem;
+        text-shadow: black 3px 1px 3px;
+        color: violet;
     }
+
 
 
 
     img.logo {
         border-radius: 55%;
-        width: 55vw;
-        height: 7vh;
+        width: 25vw;
+        height: 5vh;
     }
 
     #FooterIni {
@@ -903,25 +559,14 @@ img.logo {
         justify-content: center;
     }
 
-    .ContenedorTra {
-        width: 98vw;
-        grid-template-columns: repeat(1, 1fr);
-        grid-row: auto;
-        grid-template-areas:
-            "NavIni"
-            "TraTitu"
-            "AsideRed"
-            "FooterIni";
-
-    }
-
+   
     #PodTra {
         width: 85vw;
 
     }
 
     #TraTitu h2 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
 
@@ -946,11 +591,16 @@ img.logo {
         width: 50vw;
     }
 
-    #TituGal {
-        font-size: 3rem;
+    #TituGal h3 {
+        font-size: 2.5rem;
+        margin-left: 50px;
 
     }
-
+    .carousel-item {
+    width: 200px;
+    height: auto;
+    }
+  
     .ContImg {
         margin: 20px;
         flex-direction: column;
@@ -961,17 +611,6 @@ img.logo {
     .ContImg figure img {
         width: 55vw;
         height: 30vh;
-    }
-
-    .ContCont {
-        grid-template-columns: auto;
-        grid-row: auto;
-        grid-template-areas:
-            "NavIni NavIni"
-            "ForC ForC"
-            "Redes Redes"
-            "MapaCont MapaCont"
-            "FooterC FooterC";
     }
 
     #MapaCont iframe {
@@ -1003,7 +642,6 @@ img.logo {
 
     #AsideIni1 {
         flex-direction: row;
-        /* width: 26vw; */
         height: 28vh;
     }
 
@@ -1034,7 +672,6 @@ img.logo {
         flex-direction: column;
         justify-content: space-between;
         padding: 2px;
-        /* margin: 10px; */
     }
 
 
@@ -1122,8 +759,6 @@ img.logo {
 
 
     #MainIni .TituloI {
-        /* width: 30vw;
-        height: 70vh; */
         top: auto;
         font-family: 'Times New Roman', Times, serif;
         font-size: 5rem;
@@ -1144,16 +779,7 @@ img.logo {
     }
 
 }
-
-
-
-/* .AnimaTituAsi:hover {
-    transform: rotate(360deg);
-    transition-duration: 1s;
-    transform-origin: bottom;
-    cursor: pointer;
-
-} */
+/*           Animaciones                   */
 
 .AnimaRed:hover {
     transform: translate(10px);
@@ -1178,18 +804,6 @@ img.logo {
 
 }
 
-/* .AnimaTituBlog {
-    animation-name: AnimaTitulo;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    animation-delay: 1s;
-} */
 
-img.logo {
-    border-radius: 35%;
-}
 
-.Titunav {
-    color: white;
-}
+
