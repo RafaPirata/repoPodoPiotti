@@ -1,0 +1,56 @@
+.ContenedorNosotros {
+    display: grid;
+    width: 98vw;
+    grid-template-columns: 8vw 35vw 35vw 20vw;
+    grid-row: auto;
+    grid-template-areas:
+    "NavIni NavIni NavIni NavIni"
+    "TituNos TituNos TituNos TituNos"
+    "AsideRed Caro Caro Caro"
+    "FooterIni FooterIni FooterIni FooterIni";
+    #TituNos {
+        section {
+            h2 {
+                grid-area: TituNos;
+            display: flex;
+            font-size: 4rem;
+            font-weight: 800;
+            width: 100vw;
+            height: 10vh;
+            justify-content: center;
+            margin: 15px;
+            text-shadow: black 3px 1px 3px;
+            color: violet; 
+            }
+        }
+        }
+    #Caro {
+        grid-area: Caro;
+        display: flex;
+        flex-direction: column;
+        figure {
+            display: block;
+            text-align: center;
+            width: 30vw;
+            margin: 20px;
+        }
+    }
+    .Contenedor__kro {
+        figure {
+            img {
+                display: flex;
+                border-radius: 55%;
+                width: 25vw;
+            }
+        }
+        p {
+            display: flex;
+            font-size: 1.5rem;
+            color: rebeccapurple;
+            width: 80vw;
+            margin: 10px;
+            padding: 10px;
+            background-color: whitesmoke;            
+        }
+    }
+}

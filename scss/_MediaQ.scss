@@ -1,0 +1,231 @@
+// ---------MQ Movil-------------// 
+@media only screen and (min-Width:300px) and (max-width:599px){
+    .navbar-light{
+        .logo{
+            top: 5px;
+            left: 15px;
+            border-radius: 15%;
+            width: 50vw;
+            height: 7vh;        
+        }
+    }
+    .ContenedorInicio{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "AsideRed"
+            "MainIni"
+            "AsideIni1"
+            "FooterIni";
+        #MainIni .TituloI {
+            font-size: 2.5rem;
+            width: 70vw;
+            top: 10px;
+            position: relative;
+        }
+            .MapaI{
+                justify-items: center;        
+            }
+    }
+    .TituBlog {
+        font-size: 4rem;
+        text-shadow: black 3px 1px 3px;
+        color: violet;
+    }    
+    #FooterIni {
+            display: flex;
+            justify-content: center;
+            .PieI {
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 2px;
+                .logoPie {
+                    display: inline-block;
+                    align-items: flex-start;
+                    border-radius: 55%;
+                    width: 60vw;
+                }
+            }
+        }   
+    #TraTitu{
+        h2 {
+          font-size: 4rem;
+    }
+        section{
+            #PodTra {
+                width: 85vw;
+            }    
+        }
+    }
+    body{
+        div{
+            #TituGal{
+                h3{
+                    font-size: 2.5rem;
+                    margin-left: 50px;        
+                }
+            }
+        }
+        div{
+            header{
+                div{
+                    .carousel-item {
+                        width: 200px;
+                        height: auto;
+                    }  
+                }
+            }
+        }
+    }        
+    
+}
+
+// ----------MQ Tablet---------------//
+@media only screen and (min-Width:600px) and (max-width:800px) {
+    .ContenedorInicio {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "AsideRed"
+        "MainIni"
+        "AsideIni1"
+        "FooterIni";
+        #AsideIni1 {
+            flex-direction: row;
+            height: 28vh;
+            .TituloAside1{
+                width: 18vw;
+                h2{
+                    font-size: 2.5vw;
+                    padding: 5vw;
+                }
+            }
+        }    
+    }
+    body{
+        div{
+            a{
+                img{
+                    .logo {
+                        border-radius: 35%;
+                         width: 46vw;
+                        height: 10vh;
+                    } 
+                }
+            }
+        }
+    }
+    #TraTitu{
+        h2 {
+          font-size: 4rem;
+        }
+    }
+    footer{
+       #FooterIni{
+           display: flex;
+           justify-content: center;
+           .PieI{
+               flex-direction: column;
+               justify-content: space-between;
+               padding: 2px;
+           }
+           .logoPie{
+               display: inline-block;
+               align-items: flex-start;
+               border-radius: 55%;
+               width: 30vw;
+               height: 9vh;
+           }         
+       } 
+    }
+    body{
+        div{
+            #TituGal{
+                font-size: 4rem;
+            }
+        }
+    }   
+}
+
+
+
+@media only screen and (min-Width:801px) and (Max-Width:1080px) {
+    .navbar-light{
+        .logo{
+            width: 15vw;
+            height: 5vh;
+            left: 5px;        
+        }
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 150px;
+        margin-bottom: 0px;
+        list-style: none;
+    }  
+    .ContenedorInicio {
+        display: grid;
+        grid-template-columns: 5vw 25vw 35vw 30vw;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "AsideRed MainIni MainIni AsideIni1"
+            "AsideRed MainIni MainIni AsideIni1"
+            "FooterIni FooterIni FooterIni FooterIni";
+    }
+
+    .Portadaini {
+        width: auto;
+    }
+    .logoPie {
+        border-radius: 25%;
+        width: 15vw;
+        height: 9vh;
+    }
+
+    #AsideIni1 .TituloAside1 {
+        width: 200px;
+    }
+
+    .NotaIni li a {
+        font-size: 2.5rem;
+        font-family: 'Gill Sans',
+            'Gill Sans MT', Calibri,
+            'Trebuchet MS', sans-serif;
+
+    }
+
+    .TituloAside1 h2 {
+        font-size: 2.5vw;
+        padding: 1vw;
+
+    }
+
+    .FlexNav ul li {
+        font-size: 2vw;
+
+    }
+
+
+    #MainIni .TituloI {
+        top: auto;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5rem;
+    }
+
+    #MainIni .VideoI {
+        width: 90vw;
+        height: auto;
+        top: 0;
+        margin: 0px;
+        z-index: 9;
+    }
+
+    #FooterIni {
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}

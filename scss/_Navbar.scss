@@ -1,0 +1,30 @@
+.navbar-light {
+    background-color: rgba(238, 188, 247, .6);   
+        .logo{
+            position: absolute;
+            top: 5px;
+            left: 25px;
+            padding: 0px;
+            justify-content: center;
+            border-radius: 15%;
+            display: flex;
+            width: 15vw;
+            height: 7vh;
+          
+        }
+    }     
+    .te-Nav{
+        ul{
+            li{
+                &:hover {
+                    background-color: white;
+                    border-radius: 50%;
+            }
+        }
+    }
+}
+body{
+    .navbar{
+        padding: 30px;
+    }
+}

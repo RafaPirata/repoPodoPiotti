@@ -1,0 +1,72 @@
+.ContenedorInicio {
+    height: auto;
+    display: grid;
+    grid-template-columns: 5vw 25vw 35vw 30vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "AsideRed MainIni MainIni  AsideIni1"
+    "AsideRed MainIni MainIni AsideIni1"
+    "FooterIni FooterIni FooterIni FooterIni";
+    #MainIni {
+        grid-area: MainIni;
+        .TituloI {
+        display: flex;
+        position: absolute;
+        margin: 5vw;
+        z-index: 99;
+        font-family: 'Times New Roman',
+        Times,
+        serif;
+        font-size: 5rem;
+        color: deeppink;
+        text-shadow: white 2px 2px 4px;
+    }
+    .PortadaIni {
+        display: flex;
+    }
+    .PortadaIni {
+        width: 100%;
+        margin: 10px;
+        z-index: 9;
+    }
+        
+    }
+    #AsideIni1 {
+    grid-area: AsideIni1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+        .TituloAside1 {
+        display: flex;
+        width: 8vw;
+        justify-content: center;
+            h2 {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-top: 50px;
+            color: deeppink;
+            text-shadow: black 3px 1px 3px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            }   
+        }
+    }
+    .NotaIni{
+        li{
+            a{
+                font-size: 1.8vw;
+                margin: 5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: dimgray;
+            }
+        }
+    }
+    #MapaIni{
+        .MapaI{
+            margin: 0px;
+            padding: 10px;
+        }
+    }     
+
+}

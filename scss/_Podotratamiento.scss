@@ -1,0 +1,18 @@
+.btn-color {
+    background: linear-gradient(90deg, grey, white);
+    font-size: 2rem;
+    color: white;
+}
+#TraTitu {
+    h2 {
+    grid-area: TraTitu;
+    display: flex;
+    font-size: 7rem;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    margin: 25px;        
+    }
+}

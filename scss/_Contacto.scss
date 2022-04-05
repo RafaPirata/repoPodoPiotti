@@ -1,0 +1,41 @@
+main {
+    .TituCont{
+    grid-area: TraTitu;
+    display: flex;
+    font-size: 4rem;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
+    justify-content: center;    
+    }
+}
+.form-control {
+    font-size: 2rem;
+    background-color: rgb(196, 192, 192);
+}
+.form-select{
+    background-color: rgb(184, 244, 184);
+    font-size: 2rem;
+}
+.LogoRedes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5px;
+    div {
+        img {
+            display: flex;
+            width: 5vw;
+            height: auto;
+            padding: 0px;
+            background: none;    
+        }
+    }
+}
+footer {
+    .logo__Pie {
+        width: 100px;
+        height: auto;
+        border-radius: 15%;
+        border: black 3px solid;
+    }   
+}

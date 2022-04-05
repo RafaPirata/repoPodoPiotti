@@ -1,0 +1,18 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;    
+}
+.slide {
+    width: 45vw;
+    height: auto;
+}
+#TituGal{
+    h3 {      
+    grid-area: TraTitu;
+    display: flex;
+    font-size: 4rem;
+    text-shadow: black 3px 1px 3px;
+    color: violet;
+    justify-content: center;
+    }
+} 
