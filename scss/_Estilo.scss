@@ -29,3 +29,28 @@
 .texto__Md {
     font-size: 3rem;
 }
+.texto__Ch{
+    font-size: 2rem;
+}
+$navbarColor:rgba(238, 188, 247, 0.6);
+$textBlack: black; 
+$FondCarTra: rgb(238, 130, 238);
+$TexColorCarTrata: rgb(215, 61, 61);
+$texTitulos: rgb(238, 130, 238);
+$shaTituI: white;
+$textFooter: rgb(57, 56, 56);
+$Blanco: white;
+
+@mixin flex($justif, $aling,) {
+    display: flex;
+    justify-content: $justif;
+    align-items: $aling;
+}
+
+$shadow:(
+    'sha1': 3px 1px 3px $textBlack,
+    'sha2': .5px 1px 1px $textBlack,
+    'sha3': 3px 2px 3px 3px $textBlack,
+    'sha4': 2px 2px 2px  $shaTituI,
+
+)

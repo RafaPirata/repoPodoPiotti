@@ -1,13 +1,14 @@
-.card-title {
-    font-size: 2rem;
-    color: red;
-}
 
-.card-text {
-    font-size: 1.5rem;
-    color: black;
+.cardBlog{
+    img{ 
+    width: 100%;
+    height: auto;
+    }
+    .img-thumbnail{
+        
+        border-radius: 5%;
+    }
 }
-
 .card-text1 {
     font-size: 4rem;
     color: black;
@@ -17,8 +18,8 @@
 
 .TituBlog {
     font-size: 8rem;
-    text-shadow: black 3px 1px 3px;
-    color: violet;
+    text-shadow: map-get($map: $shadow , $key:'sha1' );
+    color: $texTitulos;
     padding: 20px;
     margin: 20px;
 }

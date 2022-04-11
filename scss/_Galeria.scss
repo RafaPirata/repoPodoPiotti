@@ -1,3 +1,9 @@
+#CarGal{
+    img[src]{
+        height: 400px;
+    }
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: black;    
@@ -11,8 +17,9 @@
     grid-area: TraTitu;
     display: flex;
     font-size: 4rem;
-    text-shadow: black 3px 1px 3px;
+    text-shadow: map-get($map: $shadow, $key:'sha1' );
     color: violet;
     justify-content: center;
+    margin: 10px;
     }
 } 

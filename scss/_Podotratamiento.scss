@@ -1,18 +1,38 @@
+
+.card-title {
+    font-size: 2rem;
+    color: $TexColorCarTrata;
+    text-shadow: map-get($map: $shadow, $key:'sha2' );
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: $textBlack;
+}
 .btn-color {
     background: linear-gradient(90deg, grey, white);
     font-size: 2rem;
-    color: white;
+    color: $Blanco;
+    box-shadow: 2px 1px 2px $textBlack;
 }
 #TraTitu {
-    h2 {
+    h1 {
     grid-area: TraTitu;
-    display: flex;
-    font-size: 7rem;
-    text-shadow: black 3px 1px 3px;
-    color: violet;
+    @include flex(center, center);
+    font-size: 4rem;
+    text-shadow: map-get($map: $shadow, $key:'sha1' );
+    color: $texTitulos;
     width: 100vw;
     height: 10vh;
-    justify-content: center;
     margin: 25px;        
     }
+}
+.cardTra{
+    width: 350px;
+    height: auto;
+    .img-thumbnail{
+    height: 250px;
+    padding: 0.55rem;
+    }
+    
 }

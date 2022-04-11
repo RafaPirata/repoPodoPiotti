@@ -13,13 +13,13 @@
             h2 {
                 grid-area: TituNos;
             display: flex;
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 800;
             width: 100vw;
             height: 10vh;
             justify-content: center;
             margin: 15px;
-            text-shadow: black 3px 1px 3px;
+            text-shadow: map-get($map: $shadow, $key:'sha1' );
             color: violet; 
             }
         }

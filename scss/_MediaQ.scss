@@ -5,10 +5,20 @@
             top: 5px;
             left: 15px;
             border-radius: 15%;
-            width: 50vw;
-            height: 7vh;        
+            width: 200px;
+            height: 40px;        
         }
     }
+    body{
+        .navbar{
+            padding: 10px;
+        }
+    }
+    #AsideRed{
+        .redes{
+            top: 50px;
+        }
+    }  
     .ContenedorInicio{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -21,17 +31,18 @@
         #MainIni .TituloI {
             font-size: 2.5rem;
             width: 70vw;
-            top: 10px;
+            top: 0px;
             position: relative;
+            margin-left: 50px;
         }
             .MapaI{
                 justify-items: center;        
-            }
+            }  
     }
     .TituBlog {
         font-size: 4rem;
         text-shadow: black 3px 1px 3px;
-        color: violet;
+        color: $FondCarTra;
     }    
     #FooterIni {
             display: flex;
@@ -43,14 +54,15 @@
                 .logoPie {
                     display: inline-block;
                     align-items: flex-start;
-                    border-radius: 55%;
+                    border-radius: 5%;
                     width: 60vw;
                 }
             }
         }   
     #TraTitu{
-        h2 {
-          font-size: 4rem;
+        h1 {
+          font-size: 2rem;
+          justify-content: center;
     }
         section{
             #PodTra {
@@ -58,31 +70,38 @@
             }    
         }
     }
-    body{
-        div{
-            #TituGal{
-                h3{
-                    font-size: 2.5rem;
-                    margin-left: 50px;        
-                }
-            }
+    #TituGal{
+        h3{
+         font-size: 2.5rem;
+         margin-left: 50px;        
         }
-        div{
-            header{
-                div{
-                    .carousel-item {
-                        width: 200px;
-                        height: auto;
-                    }  
-                }
-            }
+
+    .carousel-item {
+        width: 200px;
+        height: auto;
+        }  
+    }
+    #CarGal{
+        img[src]{
+            height: 150px;
+            width: 200px;
         }
-    }        
-    
-}
+    }
+    main{
+        .TituCont{
+            font-size: 3rem;  
+        }
+    }
+}       
+
 
 // ----------MQ Tablet---------------//
 @media only screen and (min-Width:600px) and (max-width:800px) {
+    .logo {
+        border-radius: 35%;
+        width: 200px;
+        height: 35px;
+    }     
     .ContenedorInicio {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -103,21 +122,8 @@
             }
         }    
     }
-    body{
-        div{
-            a{
-                img{
-                    .logo {
-                        border-radius: 35%;
-                         width: 46vw;
-                        height: 10vh;
-                    } 
-                }
-            }
-        }
-    }
     #TraTitu{
-        h2 {
+        h1 {
           font-size: 4rem;
         }
     }
@@ -133,9 +139,9 @@
            .logoPie{
                display: inline-block;
                align-items: flex-start;
-               border-radius: 55%;
-               width: 30vw;
-               height: 9vh;
+               border-radius: 5%;
+               width: 150px;
+               height: 30px;
            }         
        } 
     }
@@ -153,41 +159,63 @@
 @media only screen and (min-Width:801px) and (Max-Width:1080px) {
     .navbar-light{
         .logo{
-            width: 15vw;
-            height: 5vh;
-            left: 5px;        
+            width: 200px;
+            height: 60px;
+            margin-top: 0px;        
         }
+    }
+    .navbar{
+        padding-top: 40px;
     }
     .navbar-nav {
         display: flex;
         flex-direction: column;
         padding-left: 150px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         list-style: none;
     }  
     .ContenedorInicio {
         display: grid;
-        grid-template-columns: 5vw 25vw 35vw 30vw;
+        grid-template-columns: 5vw 25vw 25vw 30vw;
         grid-template-rows: auto;
         grid-template-areas:
             "AsideRed MainIni MainIni AsideIni1"
             "AsideRed MainIni MainIni AsideIni1"
             "FooterIni FooterIni FooterIni FooterIni";
+        #AsideIni1{
+            margin-left: 20px;
+            margin-top: 0px;
+            .TituloAside1{
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+        #MainIni{
+            .TituloI {
+                top: auto;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 3rem;
+                .VideoI {
+                    width: 90vw;
+                    height: auto;
+                    top: 0;
+                    margin: 0px;
+                    z-index: 9;
+                }
+            }  
+        }    
     }
-
     .Portadaini {
         width: auto;
     }
     .logoPie {
-        border-radius: 25%;
-        width: 15vw;
-        height: 9vh;
+        border-radius: 5%;
+        width: 250px;
+        height: 30px;
+        margin:0;
+        padding: 0;
     }
-
-    #AsideIni1 .TituloAside1 {
-        width: 200px;
-    }
-
     .NotaIni li a {
         font-size: 2.5rem;
         font-family: 'Gill Sans',
@@ -195,37 +223,22 @@
             'Trebuchet MS', sans-serif;
 
     }
-
-    .TituloAside1 h2 {
-        font-size: 2.5vw;
-        padding: 1vw;
-
-    }
-
     .FlexNav ul li {
         font-size: 2vw;
 
     }
-
-
-    #MainIni .TituloI {
-        top: auto;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 5rem;
-    }
-
-    #MainIni .VideoI {
-        width: 90vw;
-        height: auto;
-        top: 0;
-        margin: 0px;
-        z-index: 9;
-    }
-
     #FooterIni {
         margin-top: 2px;
         display: flex;
         flex-direction: column-reverse;
+    }    
+}
+@media only screen and (min-Width:1081px) and (Max-Width:1480px) {
+    .navbar-light{
+        .logo{
+            width: 200px;
+            height: 60px;
+            margin-top: 0px;        
+        }
     }
-
 }
