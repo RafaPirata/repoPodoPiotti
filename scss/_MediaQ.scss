@@ -1,5 +1,7 @@
 // ---------MQ Movil-------------// 
+
 @media only screen and (min-Width:300px) and (max-width:599px){
+    // Navbar //
     .navbar-light{
         .logo{
             top: 5px;
@@ -19,6 +21,7 @@
             top: 50px;
         }
     }  
+             // inicio //
     .ContenedorInicio{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -34,59 +37,95 @@
             top: 0px;
             position: relative;
             margin-left: 50px;
+
         }
-            .MapaI{
-                justify-items: center;        
-            }  
+        #MainIni .PortadaIni {
+            margin-left: 0px;
+        } 
+        .MapaI{
+            justify-items: center;        
+        }
+ 
     }
+        // Blog //
     .TituBlog {
         font-size: 4rem;
         text-shadow: black 3px 1px 3px;
         color: $FondCarTra;
-    }    
-    #FooterIni {
-            display: flex;
-            justify-content: center;
-            .PieI {
-                flex-direction: column;
-                justify-content: space-between;
-                padding: 2px;
-                .logoPie {
-                    display: inline-block;
-                    align-items: flex-start;
-                    border-radius: 5%;
-                    width: 60vw;
-                }
-            }
-        }   
-    #TraTitu{
-        h1 {
-          font-size: 2rem;
-          justify-content: center;
     }
-        section{
-            #PodTra {
-                width: 85vw;
-            }    
+        // Footer //
+    #FooterIni {
+        display: flex;
+        justify-content: center;
+        .PieI {
+            flex-direction: column;
+            justify-content: center;
+            padding: 2px;
+            .CenterFooter{
+                text-align: center;
+            }
+            .logoPie {
+                display: inline-block;
+                align-items: flex-start;
+                 border-radius: 5%;
+                width: 60vw;
+            }
         }
     }
+    //   Tratamiento //
+    #TraTitu{
+        h1{
+            font-size: 2.5rem;
+            justify-content: center;
+            margin: 25px;
+            padding: 15px;
+        }
+        #PodTra{
+            width: 85vw;
+        }
+    }    
+    .cardTra{
+        width: 250px;
+        height: auto;
+    }
+    // Nosotros //
+    .ContenedorNosotros {
+        #TituNos{
+            section{
+                h2{
+                    font-size: 2.5rem;
+                    margin-left: 10px;
+
+                }
+            }
+
+        }
+        #Caro{
+            flex-direction: column;
+            p {
+                font-size: 1.5rem;
+                width: 90%;
+            } 
+        }       
+    }
+    //    Galeria //
     #TituGal{
         h3{
          font-size: 2.5rem;
          margin-left: 50px;        
         }
-
+    }
     .carousel-item {
         width: 200px;
         height: auto;
-        }  
-    }
+    }  
     #CarGal{
         img[src]{
             height: 150px;
             width: 200px;
         }
     }
+    // Contacto //
     main{
         .TituCont{
             font-size: 3rem;  

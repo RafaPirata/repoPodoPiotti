@@ -40,6 +40,12 @@ $texTitulos: rgb(238, 130, 238);
 $shaTituI: white;
 $textFooter: rgb(57, 56, 56);
 $Blanco: white;
+$textCont: rgb(36, 156, 211);
+$FondoBlack: black;
+$TextPricipal: rgb(255, 20, 147);
+$TextVinculos: rgb(27, 27, 231);
+$TextNosotros:rgb(102, 51, 153);
+$FondNosot:rgb(245, 245, 245);
 
 @mixin flex($justif, $aling,) {
     display: flex;
@@ -54,3 +60,4 @@ $shadow:(
     'sha4': 2px 2px 2px  $shaTituI,
 
 )
+

@@ -6,7 +6,7 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: black;    
+    background-color: $FondoBlack;    
 }
 .slide {
     width: 45vw;
@@ -18,7 +18,7 @@
     display: flex;
     font-size: 4rem;
     text-shadow: map-get($map: $shadow, $key:'sha1' );
-    color: violet;
+    color: $texTitulos;
     justify-content: center;
     margin: 10px;
     }
