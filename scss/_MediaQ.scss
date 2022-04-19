@@ -1,6 +1,6 @@
 // ---------MQ Movil-------------// 
 
-@media only screen and (min-Width:300px) and (max-width:599px){
+@media only screen and (min-Width:275px) and (max-width:599px){
     // Navbar //
     .navbar-light{
         .logo{
@@ -122,7 +122,6 @@
     #CarGal{
         img[src]{
             height: 150px;
-            width: 200px;
         }
     }
     // Contacto //
@@ -136,11 +135,13 @@
 
 // ----------MQ Tablet---------------//
 @media only screen and (min-Width:600px) and (max-width:800px) {
+    //   Logo  //
     .logo {
         border-radius: 35%;
         width: 200px;
         height: 35px;
     }     
+    // Inicio //
     .ContenedorInicio {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -161,11 +162,13 @@
             }
         }    
     }
+    // Podotratamiento //
     #TraTitu{
         h1 {
           font-size: 4rem;
         }
     }
+    //   Footer //
     footer{
        #FooterIni{
            display: flex;
@@ -184,7 +187,19 @@
            }         
        } 
     }
+    //  Galeria //
     body{
+        #CarGal{
+            width: 100%;
+            height: auto;
+            img[src]{
+                height: 300px;
+        }
+            .slide {
+                width: 400px;
+                height: auto;
+            }
+        }
         div{
             #TituGal{
                 font-size: 4rem;
@@ -196,6 +211,7 @@
 
 
 @media only screen and (min-Width:801px) and (Max-Width:1080px) {
+    // navbar   //
     .navbar-light{
         .logo{
             width: 200px;
@@ -213,6 +229,7 @@
         margin-bottom: 10px;
         list-style: none;
     }  
+    //   Inicio //
     .ContenedorInicio {
         display: grid;
         grid-template-columns: 5vw 25vw 25vw 30vw;
@@ -266,6 +283,7 @@
         font-size: 2vw;
 
     }
+    // Footer //
     #FooterIni {
         margin-top: 2px;
         display: flex;
@@ -273,11 +291,26 @@
     }    
 }
 @media only screen and (min-Width:1081px) and (Max-Width:1480px) {
+    // Navbar // 
     .navbar-light{
         .logo{
             width: 200px;
             height: 60px;
             margin-top: 0px;        
+        }
+    }
+    // Galeria // 
+    body{
+        #CarGal{
+            width: 100%;
+            height: auto;
+            img[src]{
+                height: 300px;
+            }
+            .slide {
+                width: 400px;
+                height: auto;
+            }
         }
     }
 }

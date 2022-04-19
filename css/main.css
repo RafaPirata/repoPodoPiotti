@@ -185,15 +185,12 @@
 .card-body {
   background-color: rgba(238, 188, 247, 0.6); }
 
-#CarGal img[src] {
-  height: 400px; }
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black; }
 
 .slide {
-  width: 45vw;
+  width: 200px;
   height: auto; }
 
 #TituGal h3 {
@@ -283,9 +280,17 @@ main .TituCont {
   grid-area: TraTitu;
   display: flex;
   font-size: 4rem;
+  font-weight: 600;
   text-shadow: black 3px 1px 3px;
-  color: violet;
+  color: deeppink;
   justify-content: center; }
+
+.contTitu2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px;
+  color: deeppink;
+  text-shadow: 3px 1px 3px black; }
 
 .form-control {
   font-size: 2rem;
@@ -307,7 +312,34 @@ main .TituCont {
     padding: 0px;
     background: none; }
 
-@media only screen and (min-Width: 300px) and (max-width: 599px) {
+.error {
+  margin: 0;
+  padding: 0;
+  background-color: #0a1821;
+  height: auto;
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  color: #fff;
+  text-align: center; }
+
+.EERR {
+  font-weight: 200;
+  font-size: 20px;
+  color: #fff;
+  list-style: none; }
+
+.EER2 {
+  font-size: 120px;
+  color: #fff;
+  font-weight: 800; }
+
+.EER3 {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  font-size: 4rem; }
+
+@media only screen and (min-Width: 275px) and (max-width: 599px) {
   .navbar-light .logo {
     top: 5px;
     left: 15px;
@@ -376,8 +408,7 @@ main .TituCont {
     width: 200px;
     height: auto; }
   #CarGal img[src] {
-    height: 150px;
-    width: 200px; }
+    height: 150px; }
   main .TituCont {
     font-size: 3rem; } }
 
@@ -414,6 +445,14 @@ main .TituCont {
       border-radius: 5%;
       width: 150px;
       height: 30px; }
+  body #CarGal {
+    width: 100%;
+    height: auto; }
+    body #CarGal img[src] {
+      height: 300px; }
+    body #CarGal .slide {
+      width: 400px;
+      height: auto; }
   body div #TituGal {
     font-size: 4rem; } }
 
@@ -472,4 +511,12 @@ main .TituCont {
   .navbar-light .logo {
     width: 200px;
     height: 60px;
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  body #CarGal {
+    width: 100%;
+    height: auto; }
+    body #CarGal img[src] {
+      height: 300px; }
+    body #CarGal .slide {
+      width: 400px;
+      height: auto; } }

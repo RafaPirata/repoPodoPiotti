@@ -3,10 +3,18 @@ main {
     grid-area: TraTitu;
     display: flex;
     font-size: 4rem;
+    font-weight: 600;
     text-shadow: black 3px 1px 3px;
-    color: violet;
+    color: $TextPricipal;
     justify-content: center;    
     }
+}
+.contTitu2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px;
+    color: $TextPricipal;
+    text-shadow: map-get($map: $shadow, $key:'sha1');
 }
 .form-control {
     font-size: 2rem;
